@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>codepen layout</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/6c722e42cf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="codpen">
+      <header class="pen">
+        <div class="pen__details">
+          <img
+            class="profile"
+            src="images/developer.jpeg"
+            alt="A developer woman"
+          />
+          <h1>Black Pink Pen</h1>
+          <p class="pen__author">A Pen by Kunnikar</p>
+        </div>
+        <button class="button">Save</button>
+        <button class="button button--dirty">Save As </button>
+        <button class="button">Setting</button>
+        <button class="button">View</button>
+      </header>
+
+      <section class="code">
+        <div class="editor">
+          <header class="editor__header">
+            <button class="button button--small"></button>
+            <h3 class="editor__header">HTML</h3>
+          </header>
+
+          <div class="editor__code">
+            <div class="editor__gutter">
+              <div class="editor__gutter">
+                <span class="editor__number">1</span>
+                <span class="editor__number">2</span>
+                <span class="editor__number">3</span>
+              </div>
+            </div>
+            <textarea class="editor__input">Hello World!</textarea>
+          </div>
+        </div>
+
+        <div class="editor">
+          <header class="editor__header"> 
+            <h3 class="editor__header"><button class="button button--small"></button> CSS </h3>
+          </header>
+          <div class="editor__code">
+            <div class="editor__gutter">
+              <div class="editor__gutter">
+                <span class="editor__number">1</span>
+                <span class="editor__number">2</span>
+                <span class="editor__number">3</span>
+              </div>
+            </div>
+            <textarea class="editor__input">
+              .mypen { 
+                  is: cool; 
+              }</textarea
+            >
+          </div>
+        </div>
+
+        <div class="editor">
+          <header class="editor__header">
+            <button class="button button--small"></button>
+            <h3 class="editor__header">JavaScript</h3>
+          </header>
+          <div class="editor__code">
+            <div class="editor__gutter">
+              <span class="editor__number">1</span>
+              <span class="editor__number">2</span>
+              <span class="editor__number">3</span>
+            </div>
+            <textarea class="editor__input">const iAm = "coolest";</textarea>
+          </div>
+        </div>
+        <div class="editor__header"></div>
+      </section>
+
+      <section class="preview">
+        <img src="images/black-pink.jpeg" alt="" />
+      </section>
+
+      <footer class="settings">
+        <p>Project by Kunnikar Copyright &copy; 2024</p>
+        <a href="#"><i class="fa fa-github"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+      </footer>
+    </div>
+  </body>
+</html>
